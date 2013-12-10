@@ -1,7 +1,7 @@
 #ifdef __WAND__
 target[
 	name[
-		FFT.o
+		fft.o
 	]
 	type[
 		object
@@ -26,7 +26,7 @@ int FFT::FFT::run()
 	
 	for(size_t k=0;k<buffer.dimGet();++k)
 		{
-		buffer[k]=sin(k*2*MathExt::PI/4);
+		buffer[k]=sin(k*2*MathExt::PI/8)+sin(k*2*MathExt::PI/4);
 		}
 	
 	fftplan.execute();
