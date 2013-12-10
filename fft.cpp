@@ -19,7 +19,8 @@ target[
 int FFT::FFT::run()
 	{
 	Vector::Vector<float> buffer(32);
-	Vector::Vector<std::complex<float> > buffer_out(buffer.dimGet()/2 + 1);
+	Vector::Vector<std::complex<float> > buffer_out
+		(PlanFloat_1dR2C::sizeOut(buffer.dimGet()));
 	
 	PlanFloat_1dR2C fftplan(buffer.begin(),buffer_out.begin(),buffer.dimGet());
 	
