@@ -6,6 +6,7 @@ target[name[planfloat-1dr2c.h]type[include]]
 #ifndef PLANFLOAT_1DR2C_H
 #define PLANFLOAT_1DR2C_H
 
+#include <vector/vector.h>
 #include <complex>
 
 namespace FFT
