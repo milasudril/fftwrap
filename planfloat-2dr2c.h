@@ -7,7 +7,7 @@ target[name[planfloat-2dr2c.h]type[include]]
 #define PLANFLOAT_2DR2C_H
 
 #include <vector/vector2d.h>
-#include <herbs/matrixstorage.h>
+#include <vector/matrixstorage.h>
 #include <complex>
 
 namespace FFT
@@ -26,8 +26,8 @@ namespace FFT
 				return ret;
 				}
 			
-			PlanFloat_2dR2C(Herbs::MatrixStorage<InputType>& buffer_in
-				,Herbs::MatrixStorage<OutputType>& buffer_out);
+			PlanFloat_2dR2C(Vector::MatrixStorage<InputType>& buffer_in
+				,Vector::MatrixStorage<OutputType>& buffer_out);
 			void execute();  
 			~PlanFloat_2dR2C();
 		

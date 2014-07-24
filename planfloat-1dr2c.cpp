@@ -1,5 +1,5 @@
 #ifdef __WAND__
-target[name[planfloat-1dr2c.o]type[object]dependencies[fftw3f]]
+target[name[planfloat-1dr2c.o]type[object]dependency[fftw3f;external]]
 #endif
 
 #include "planfloat-1dr2c.h"

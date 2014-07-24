@@ -1,5 +1,5 @@
 #ifdef __WAND__
-dependencies[planfloat-1dr2c.o]
+dependency[planfloat-1dr2c.o]
 target[name[planfloat-1dr2c.h]type[include]]
 #endif
 

@@ -5,8 +5,8 @@ target[name[planfloat-2dr2c.o]type[object]dependencies[fftw3f]]
 #include "planfloat-2dr2c.h"
 #include <fftw3.h>
 
-FFT::PlanFloat_2dR2C::PlanFloat_2dR2C(Herbs::MatrixStorage<InputType>& buffer_in
-	,Herbs::MatrixStorage<OutputType>& buffer_out)
+FFT::PlanFloat_2dR2C::PlanFloat_2dR2C(Vector::MatrixStorage<InputType>& buffer_in
+	,Vector::MatrixStorage<OutputType>& buffer_out)
 	{
 	plan=fftwf_plan_dft_r2c_2d
 		(
