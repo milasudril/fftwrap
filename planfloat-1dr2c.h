@@ -6,7 +6,6 @@ target[name[planfloat-1dr2c.h]type[include]]
 #ifndef PLANFLOAT_1DR2C_H
 #define PLANFLOAT_1DR2C_H
 
-#include <vector/vector.h>
 #include <complex>
 
 namespace FFT
@@ -16,15 +15,16 @@ namespace FFT
 		public:
 			typedef std::complex<float> OutputType;
 			typedef float InputType;
-			
+
 			static size_t sizeOut(size_t size_in)
 				{return size_in/2+1;}
-			
+
 			PlanFloat_1dR2C(InputType* buffer_in
 				,OutputType* buffer_out, size_t n_elem);
-			void execute();  
+			void execute();
+			void execute(InputType* buffer_in,OutputType* buffer_out);
 			~PlanFloat_1dR2C();
-		
+
 		private:
 			void* plan;
 		};

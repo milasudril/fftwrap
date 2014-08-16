@@ -8,6 +8,7 @@ target[name[planfloat-2dr2c.o]type[object]dependencies[fftw3f]]
 FFT::PlanFloat_2dR2C::PlanFloat_2dR2C(Vector::MatrixStorage<InputType>& buffer_in
 	,Vector::MatrixStorage<OutputType>& buffer_out)
 	{
+	fftwf_set_timelimit(10);
 	plan=fftwf_plan_dft_r2c_2d
 		(
 		 buffer_in.nRowsGet()
