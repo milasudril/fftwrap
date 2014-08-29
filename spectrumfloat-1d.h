@@ -49,7 +49,6 @@ namespace FFT
 
 
 
-
 			size_t spectrumLength() const
 				{return spectrum.length();}
 
