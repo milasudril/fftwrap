@@ -16,6 +16,9 @@ namespace FFT
 			typedef std::complex<float> InputType;
 			typedef float OutputType;
 
+			static size_t sizeOut(size_t size_in,int odd)
+				{return 2*(size_in - 1) + odd;}
+
 			PlanFloat_1dC2R(InputType* buffer_in
 				,OutputType* buffer_out, size_t n_elem);
 			void execute();

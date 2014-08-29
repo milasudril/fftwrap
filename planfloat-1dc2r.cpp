@@ -8,7 +8,7 @@ target[name[planfloat-1dc2r.o]type[object]dependency[fftw3f;external]]
 FFT::PlanFloat_1dC2R::PlanFloat_1dC2R(InputType* buffer_in
 	,OutputType* buffer_out,size_t n_elem)
 	{
-	fftwf_set_timelimit(10);
+	fftwf_set_timelimit(1);
 	plan=fftwf_plan_dft_c2r_1d
 		(
 		 n_elem
